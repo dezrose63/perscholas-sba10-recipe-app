@@ -13,6 +13,7 @@ function App() {
       <Navbar />
       <main className="max-w-5xl mx-auto px-4 py-6">
         <Routes>
+          <Route path='/' element={<HomePage />} />  
           <Route path="/homepage/:homePage" element={<HomePage />} />
           <Route path="/category/:categoryName" element={<CategoryPage />} />
           <Route path="/recipe/:recipeId" element={<RecipeDetailPage />} />
